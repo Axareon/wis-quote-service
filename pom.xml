@@ -17,75 +17,73 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-		<dependency>
-        	<groupId>software.amazon.awssdk</groupId>
-        	<artifactId>dynamodb-enhanced</artifactId>
-        	<version>2.17.255</version>
-    	</dependency>
-    	<dependency>
-        	<groupId>com.auth0</groupId>
-        	<artifactId>java-jwt</artifactId>
-        	<version>3.18.2</version>
-    	</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-oauth2-resource-server</artifactId>
-    	</dependency>
-    	<dependency>
-        	<groupId>org.springframework.security</groupId>
-        	<artifactId>spring-security-oauth2-jose</artifactId>
-    	</dependency>
-		<!-- AWS Lambda Java Core -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-lambda-java-core</artifactId>
-			<version>1.2.1</version>
-		</dependency>
-
-		<!-- AWS Lambda Java Events -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-lambda-java-events</artifactId>
-			<version>3.10.0</version>
-		</dependency>
-
-		<!-- AWS Lambda Java Log4j2 -->
-		<dependency>
-			<groupId>com.amazonaws</groupId>
-			<artifactId>aws-lambda-java-log4j2</artifactId>
-			<version>1.5.0</version>
-		</dependency>
-
-		<!-- Spring Cloud Function Adapter for AWS -->
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-function-adapter-aws</artifactId>
-			<version>3.2.3</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>software.amazon.awssdk</groupId>
+            <artifactId>dynamodb-enhanced</artifactId>
+            <version>2.17.255</version>
+        </dependency>
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-resource-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-oauth2-jose</artifactId>
+        </dependency>
+        <!-- AWS Lambda Java Core -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-lambda-java-core</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+        <!-- AWS Lambda Java Events -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-lambda-java-events</artifactId>
+            <version>3.10.0</version>
+        </dependency>
+        <!-- AWS Lambda Java Log4j2 -->
+        <dependency>
+            <groupId>com.amazonaws</groupId>
+            <artifactId>aws-lambda-java-log4j2</artifactId>
+            <version>1.5.0</version>
+        </dependency>
+        <!-- Spring Cloud Function Adapter for AWS -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-function-adapter-aws</artifactId>
+            <version>3.2.3</version>
+        </dependency>
+        <!-- Spring Boot Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <!-- Spring Security Test -->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>
