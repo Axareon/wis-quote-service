@@ -47,11 +47,34 @@
         	<groupId>org.springframework.security</groupId>
         	<artifactId>spring-security-oauth2-jose</artifactId>
     	</dependency>
+		<!-- AWS Lambda Java Core -->
 		<dependency>
-    		<groupId>io.github.cdimascio</groupId>
-    		<artifactId>java-dotenv</artifactId>
-    		<version>5.2.2</version>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-lambda-java-core</artifactId>
+			<version>1.2.1</version>
 		</dependency>
+
+		<!-- AWS Lambda Java Events -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-lambda-java-events</artifactId>
+			<version>3.10.0</version>
+		</dependency>
+
+		<!-- AWS Lambda Java Log4j2 -->
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-lambda-java-log4j2</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+
+		<!-- Spring Cloud Function Adapter for AWS -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-function-adapter-aws</artifactId>
+			<version>3.2.3</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
@@ -69,6 +92,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
 			</plugin>
 		</plugins>
 	</build>
