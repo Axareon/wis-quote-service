@@ -1,0 +1,9 @@
+auth0:
+  audience: ${AUTH0_AUDIENCE}
+  issuer: ${AUTH0_ISSUER}
+
+aws:
+  region: ${AWS_REGION}
+  credentials:
+    accessKey: ${AWS_ACCESS_KEY_ID}
+    secretKey: ${AWS_SECRET_ACCESS_KEY}
